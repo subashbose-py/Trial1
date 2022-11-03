@@ -1,0 +1,911 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/subashbose-py/Trial1/blob/main/practise\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YGw_5vXuCd9U"
+      },
+      "source": [
+        "# INWK6312 Programming for Internetworking\n",
+        "# MIDTERM EXAM\n",
+        "# January 28, 2022\n",
+        "<hr>\n",
+        "<hr>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MzcwC_8ZWJIi"
+      },
+      "source": [
+        "#### Double-Click this CELL  and fill with your details\n",
+        "\n",
+        "# Name: Subash Chandra Bose\n",
+        "\n",
+        "# B00-Number: B00858267"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4CA93DmkJ6_z"
+      },
+      "source": [
+        "<hr>\n",
+        "<hr>\n",
+        "\n",
+        "**Question 1: 50pts**\n",
+        "\n",
+        "**Question 2: 50pts**\n",
+        "\n",
+        "**Question 3: 50pts**\n",
+        "\n",
+        "**Total:      120pts** \n",
+        "\n",
+        "### Instructions:\n",
+        "- This exam is not only a test of your Python knowledge, it is also a test of your Git Skills and using Docker.\n",
+        "- You are expected to make a commit after the end of every question. You do not necessarily need to make a push after every commit. You can push after you are done with all the questions and ready to submit. (it is up to you)\n",
+        "\n",
+        "- **You need at least 3 commits to consider your exam to be graded!** You can add more if you wish\n",
+        "\n",
+        "- When asked to write a program, you do not necessarily need to write a function except if you wish or the questions says you should.\n",
+        "\n",
+        "- You can create extra cells in the notebook if you wish. \n",
+        "- Use good coding practices to make your work clear and easy to grade, marks will be awarded for concise coding\n",
+        "<hr>\n",
+        "\n",
+        "- If your cell keeps showing the **loading(spining)** symbol for longer than expected  when you run your program in a cell, it means you may have ended up in an \"infinite\" loop especially if that cell has a while statement in it. Interupt the Python Kernel by:\n",
+        "> - On Google Colab: Click on the **Runtime** menu and click on **Interupt execution**\n",
+        "> - On Juptyter Notebook Click on the **Kernel** menu and click on **Interupt**\n",
+        "\n",
+        "**Goodluck!**\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DXplPHJqCd9n"
+      },
+      "source": [
+        "# Question 1 - 50 Points\n",
+        "\n",
+        "Your task is to write and test a function which takes **one argument (a year)** and returns ```True``` if the year is a leap year, or ```False``` otherwise.\n",
+        "\n",
+        "Note: we've also prepared a short testing code, which you can use to test your function.\n",
+        "\n",
+        "The code uses two lists - one with the test data, and the other containing the expected results. The code will tell you if any of your results are invalid.\n",
+        "\n",
+        "\n",
+        "**Code hints to write your function:**\n",
+        "\n",
+        "if year is divisible by 400 then it is a leap year OR if year is divisible by 100 then it is not a leap year OR if year is divisible by 4 then it is a leap year. if all conditons not met, not it is not a leap year\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-FvpAgUJCd9s",
+        "outputId": "9daf3bc9-7db4-4a21-f043-c08e2235304e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "def isYearLeap(year): \n",
+        "\n",
+        "  if (year % 400 == 0) and (year % 100 == 0):\n",
+        "    print(True)\n",
+        "\n",
+        "  elif (year % 4 ==0) and (year % 100 != 0):\n",
+        "    print(True)\n",
+        "\n",
+        "  else:\n",
+        "    print(False)\n",
+        "\n",
+        "\n",
+        "isYearLeap(2004)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qdUrOGRSCd9u"
+      },
+      "source": [
+        "### Run the Cell to Test your function"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 252
+        },
+        "id": "k6Vw77MOCd9w",
+        "outputId": "71461e38-3e8c-4547-b926-88c68438bd9e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1900 ->"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-1-2057166fe1dc>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0myr\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtestData\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0myr\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\"->\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mend\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m     \u001b[0mresult\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0misYearLeap\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0myr\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mresult\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mtestResults\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m         \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"OK\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'isYearLeap' is not defined"
+          ]
+        }
+      ],
+      "source": [
+        "testData = [1900, 2000, 2016, 1987]\n",
+        "testResults = [False, True, True, False]\n",
+        "for i in range(len(testData)):\n",
+        "    yr = testData[i]\n",
+        "    print(yr,\"->\",end=\"\")\n",
+        "    result = isYearLeap(yr)\n",
+        "    if result == testResults[i]:\n",
+        "        print(\"OK\")\n",
+        "    else:\n",
+        "        print(\"Failed\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c15BJkWpCd9x"
+      },
+      "source": [
+        "# Question 2 - 50 points"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 31,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3QtLMFscCd9y",
+        "outputId": "099a2e62-03df-45e6-cf22-527fba1df815"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Requirement already satisfied: tabulate in /usr/local/lib/python3.7/dist-packages (0.8.10)\n",
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting funcy\n",
+            "  Downloading funcy-1.17-py2.py3-none-any.whl (33 kB)\n",
+            "Installing collected packages: funcy\n",
+            "Successfully installed funcy-1.17\n"
+          ]
+        }
+      ],
+      "source": [
+        "import sys\n",
+        "import json\n",
+        "\n",
+        "!{sys.executable} -m pip install tabulate\n",
+        "!pip install funcy"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5CnnSSvOCd9z",
+        "outputId": "67606f72-b908-4c7e-9a64-b2f0b7c9661c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The JSON document is loaded as type <class 'list'>\n",
+            "\n",
+            "[{'route_id': '1'}, {'route_short_name': '1'}, {'route_long_name': 'Spring Garden'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '10'}, {'route_short_name': '10'}, {'route_long_name': 'Dalhousie'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '136'}, {'route_short_name': '136'}, {'route_long_name': 'Farnham Gate'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '14'}, {'route_short_name': '14'}, {'route_long_name': 'Leiblin Park'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '185'}, {'route_short_name': '185'}, {'route_long_name': 'Millwood Express'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '2'}, {'route_short_name': '2'}, {'route_long_name': 'Fairview'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '21'}, {'route_short_name': '21'}, {'route_long_name': 'Lakeside - Timberlea'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '22'}, {'route_short_name': '22'}, {'route_long_name': 'Armdale'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '25'}, {'route_short_name': '25'}, {'route_long_name': 'Governors Brook'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '28'}, {'route_short_name': '28'}, {'route_long_name': 'Bayers Lake'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '29'}, {'route_short_name': '29'}, {'route_long_name': 'Barrington'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '3'}, {'route_short_name': '3'}, {'route_long_name': 'CrossTown'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '30A'}, {'route_short_name': '30A'}, {'route_long_name': 'Parkland'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '30B'}, {'route_short_name': '30B'}, {'route_long_name': 'Dunbrack'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '320'}, {'route_short_name': '320'}, {'route_long_name': 'Airport - Fall River MetroX'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '330'}, {'route_short_name': '330'}, {'route_long_name': 'Tantallon - Sheldrake Lake MetroX'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '370'}, {'route_short_name': '370'}, {'route_long_name': 'Porters Lake MetroX'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '39'}, {'route_short_name': '39'}, {'route_long_name': 'Flamingo'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '4'}, {'route_short_name': '4'}, {'route_long_name': 'Universities'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '401'}, {'route_short_name': '401'}, {'route_long_name': 'Preston - Porters Lake - Grand Desert'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '415'}, {'route_short_name': '415'}, {'route_long_name': 'Purcells Cove'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '433'}, {'route_short_name': '433'}, {'route_long_name': 'Tantallon'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '51'}, {'route_short_name': '51'}, {'route_long_name': 'Windmill'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '53'}, {'route_short_name': '53'}, {'route_long_name': 'Notting Park'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '54'}, {'route_short_name': '54'}, {'route_long_name': 'Montebello'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '55'}, {'route_short_name': '55'}, {'route_long_name': 'Port Wallace'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '56'}, {'route_short_name': '56'}, {'route_long_name': 'Dartmouth Crossing'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '57'}, {'route_short_name': '57'}, {'route_long_name': 'Russell Lake'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '58'}, {'route_short_name': '58'}, {'route_long_name': 'Woodlawn'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '59'}, {'route_short_name': '59'}, {'route_long_name': 'Colby'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '60'}, {'route_short_name': '60'}, {'route_long_name': 'Eastern Passage - Heritage Hills'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '61'}, {'route_short_name': '61'}, {'route_long_name': 'Auburn - North Preston'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '62'}, {'route_short_name': '62'}, {'route_long_name': 'Wildwood'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '63'}, {'route_short_name': '63'}, {'route_long_name': 'Woodside'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '64'}, {'route_short_name': '64'}, {'route_long_name': 'Burnside'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '65'}, {'route_short_name': '65'}, {'route_long_name': 'Caldwell'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '66'}, {'route_short_name': '66'}, {'route_long_name': 'Penhorn'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '68'}, {'route_short_name': '68'}, {'route_long_name': 'Cherry Brook'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '7'}, {'route_short_name': '7'}, {'route_long_name': 'Robie'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '72'}, {'route_short_name': '72'}, {'route_long_name': 'Portland Hills'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '8'}, {'route_short_name': '8'}, {'route_long_name': 'Sackville Corridor'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '82'}, {'route_short_name': '82'}, {'route_long_name': 'First Lake'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '83'}, {'route_short_name': '83'}, {'route_long_name': 'Springfield'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '84'}, {'route_short_name': '84'}, {'route_long_name': 'Glendale'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '85'}, {'route_short_name': '85'}, {'route_long_name': 'Millwood'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '86'}, {'route_short_name': '86'}, {'route_long_name': 'Beaver Bank'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '87'}, {'route_short_name': '87'}, {'route_long_name': 'Sackville - Dartmouth'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '88'}, {'route_short_name': '88'}, {'route_long_name': 'Bedford Commons'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '90'}, {'route_short_name': '90'}, {'route_long_name': 'Larry Uteck'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '91'}, {'route_short_name': '91'}, {'route_long_name': 'Hemlock Ravine'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '9A'}, {'route_short_name': '9A'}, {'route_long_name': 'Greystone'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': '9B'}, {'route_short_name': '9B'}, {'route_long_name': 'Herring Cove'}, {'route_type': 3}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': 'FerD'}, {'route_short_name': 'FerD'}, {'route_long_name': 'Alderney Ferry'}, {'route_type': 4}, {'route_color': '7476D9'}, {'route_text_color': 0}, {'route_id': 'FerW'}, {'route_short_name': 'FerW'}, {'route_long_name': 'Woodside Ferry'}, {'route_type': 4}, {'route_color': '7476D9'}, {'route_text_color': 0}]\n",
+            "| route_id   | route_short_name   | route_long_name                       |   route_type | route_color   |   route_text_color |\n",
+            "|------------|--------------------|---------------------------------------|--------------|---------------|--------------------|\n",
+            "| 1          |                    |                                       |              |               |                    |\n",
+            "|            | 1                  |                                       |              |               |                    |\n",
+            "|            |                    | Spring Garden                         |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 10         |                    |                                       |              |               |                    |\n",
+            "|            | 10                 |                                       |              |               |                    |\n",
+            "|            |                    | Dalhousie                             |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 136        |                    |                                       |              |               |                    |\n",
+            "|            | 136                |                                       |              |               |                    |\n",
+            "|            |                    | Farnham Gate                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 14         |                    |                                       |              |               |                    |\n",
+            "|            | 14                 |                                       |              |               |                    |\n",
+            "|            |                    | Leiblin Park                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 185        |                    |                                       |              |               |                    |\n",
+            "|            | 185                |                                       |              |               |                    |\n",
+            "|            |                    | Millwood Express                      |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 2          |                    |                                       |              |               |                    |\n",
+            "|            | 2                  |                                       |              |               |                    |\n",
+            "|            |                    | Fairview                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 21         |                    |                                       |              |               |                    |\n",
+            "|            | 21                 |                                       |              |               |                    |\n",
+            "|            |                    | Lakeside - Timberlea                  |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 22         |                    |                                       |              |               |                    |\n",
+            "|            | 22                 |                                       |              |               |                    |\n",
+            "|            |                    | Armdale                               |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 25         |                    |                                       |              |               |                    |\n",
+            "|            | 25                 |                                       |              |               |                    |\n",
+            "|            |                    | Governors Brook                       |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 28         |                    |                                       |              |               |                    |\n",
+            "|            | 28                 |                                       |              |               |                    |\n",
+            "|            |                    | Bayers Lake                           |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 29         |                    |                                       |              |               |                    |\n",
+            "|            | 29                 |                                       |              |               |                    |\n",
+            "|            |                    | Barrington                            |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 3          |                    |                                       |              |               |                    |\n",
+            "|            | 3                  |                                       |              |               |                    |\n",
+            "|            |                    | CrossTown                             |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 30A        |                    |                                       |              |               |                    |\n",
+            "|            | 30A                |                                       |              |               |                    |\n",
+            "|            |                    | Parkland                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 30B        |                    |                                       |              |               |                    |\n",
+            "|            | 30B                |                                       |              |               |                    |\n",
+            "|            |                    | Dunbrack                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 320        |                    |                                       |              |               |                    |\n",
+            "|            | 320                |                                       |              |               |                    |\n",
+            "|            |                    | Airport - Fall River MetroX           |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 330        |                    |                                       |              |               |                    |\n",
+            "|            | 330                |                                       |              |               |                    |\n",
+            "|            |                    | Tantallon - Sheldrake Lake MetroX     |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 370        |                    |                                       |              |               |                    |\n",
+            "|            | 370                |                                       |              |               |                    |\n",
+            "|            |                    | Porters Lake MetroX                   |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 39         |                    |                                       |              |               |                    |\n",
+            "|            | 39                 |                                       |              |               |                    |\n",
+            "|            |                    | Flamingo                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 4          |                    |                                       |              |               |                    |\n",
+            "|            | 4                  |                                       |              |               |                    |\n",
+            "|            |                    | Universities                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 401        |                    |                                       |              |               |                    |\n",
+            "|            | 401                |                                       |              |               |                    |\n",
+            "|            |                    | Preston - Porters Lake - Grand Desert |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 415        |                    |                                       |              |               |                    |\n",
+            "|            | 415                |                                       |              |               |                    |\n",
+            "|            |                    | Purcells Cove                         |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 433        |                    |                                       |              |               |                    |\n",
+            "|            | 433                |                                       |              |               |                    |\n",
+            "|            |                    | Tantallon                             |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 51         |                    |                                       |              |               |                    |\n",
+            "|            | 51                 |                                       |              |               |                    |\n",
+            "|            |                    | Windmill                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 53         |                    |                                       |              |               |                    |\n",
+            "|            | 53                 |                                       |              |               |                    |\n",
+            "|            |                    | Notting Park                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 54         |                    |                                       |              |               |                    |\n",
+            "|            | 54                 |                                       |              |               |                    |\n",
+            "|            |                    | Montebello                            |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 55         |                    |                                       |              |               |                    |\n",
+            "|            | 55                 |                                       |              |               |                    |\n",
+            "|            |                    | Port Wallace                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 56         |                    |                                       |              |               |                    |\n",
+            "|            | 56                 |                                       |              |               |                    |\n",
+            "|            |                    | Dartmouth Crossing                    |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 57         |                    |                                       |              |               |                    |\n",
+            "|            | 57                 |                                       |              |               |                    |\n",
+            "|            |                    | Russell Lake                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 58         |                    |                                       |              |               |                    |\n",
+            "|            | 58                 |                                       |              |               |                    |\n",
+            "|            |                    | Woodlawn                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 59         |                    |                                       |              |               |                    |\n",
+            "|            | 59                 |                                       |              |               |                    |\n",
+            "|            |                    | Colby                                 |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 60         |                    |                                       |              |               |                    |\n",
+            "|            | 60                 |                                       |              |               |                    |\n",
+            "|            |                    | Eastern Passage - Heritage Hills      |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 61         |                    |                                       |              |               |                    |\n",
+            "|            | 61                 |                                       |              |               |                    |\n",
+            "|            |                    | Auburn - North Preston                |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 62         |                    |                                       |              |               |                    |\n",
+            "|            | 62                 |                                       |              |               |                    |\n",
+            "|            |                    | Wildwood                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 63         |                    |                                       |              |               |                    |\n",
+            "|            | 63                 |                                       |              |               |                    |\n",
+            "|            |                    | Woodside                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 64         |                    |                                       |              |               |                    |\n",
+            "|            | 64                 |                                       |              |               |                    |\n",
+            "|            |                    | Burnside                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 65         |                    |                                       |              |               |                    |\n",
+            "|            | 65                 |                                       |              |               |                    |\n",
+            "|            |                    | Caldwell                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 66         |                    |                                       |              |               |                    |\n",
+            "|            | 66                 |                                       |              |               |                    |\n",
+            "|            |                    | Penhorn                               |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 68         |                    |                                       |              |               |                    |\n",
+            "|            | 68                 |                                       |              |               |                    |\n",
+            "|            |                    | Cherry Brook                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 7          |                    |                                       |              |               |                    |\n",
+            "|            | 7                  |                                       |              |               |                    |\n",
+            "|            |                    | Robie                                 |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 72         |                    |                                       |              |               |                    |\n",
+            "|            | 72                 |                                       |              |               |                    |\n",
+            "|            |                    | Portland Hills                        |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 8          |                    |                                       |              |               |                    |\n",
+            "|            | 8                  |                                       |              |               |                    |\n",
+            "|            |                    | Sackville Corridor                    |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 82         |                    |                                       |              |               |                    |\n",
+            "|            | 82                 |                                       |              |               |                    |\n",
+            "|            |                    | First Lake                            |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 83         |                    |                                       |              |               |                    |\n",
+            "|            | 83                 |                                       |              |               |                    |\n",
+            "|            |                    | Springfield                           |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 84         |                    |                                       |              |               |                    |\n",
+            "|            | 84                 |                                       |              |               |                    |\n",
+            "|            |                    | Glendale                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 85         |                    |                                       |              |               |                    |\n",
+            "|            | 85                 |                                       |              |               |                    |\n",
+            "|            |                    | Millwood                              |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 86         |                    |                                       |              |               |                    |\n",
+            "|            | 86                 |                                       |              |               |                    |\n",
+            "|            |                    | Beaver Bank                           |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 87         |                    |                                       |              |               |                    |\n",
+            "|            | 87                 |                                       |              |               |                    |\n",
+            "|            |                    | Sackville - Dartmouth                 |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 88         |                    |                                       |              |               |                    |\n",
+            "|            | 88                 |                                       |              |               |                    |\n",
+            "|            |                    | Bedford Commons                       |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 90         |                    |                                       |              |               |                    |\n",
+            "|            | 90                 |                                       |              |               |                    |\n",
+            "|            |                    | Larry Uteck                           |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 91         |                    |                                       |              |               |                    |\n",
+            "|            | 91                 |                                       |              |               |                    |\n",
+            "|            |                    | Hemlock Ravine                        |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 9A         |                    |                                       |              |               |                    |\n",
+            "|            | 9A                 |                                       |              |               |                    |\n",
+            "|            |                    | Greystone                             |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| 9B         |                    |                                       |              |               |                    |\n",
+            "|            | 9B                 |                                       |              |               |                    |\n",
+            "|            |                    | Herring Cove                          |              |               |                    |\n",
+            "|            |                    |                                       |            3 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| FerD       |                    |                                       |              |               |                    |\n",
+            "|            | FerD               |                                       |              |               |                    |\n",
+            "|            |                    | Alderney Ferry                        |              |               |                    |\n",
+            "|            |                    |                                       |            4 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n",
+            "| FerW       |                    |                                       |              |               |                    |\n",
+            "|            | FerW               |                                       |              |               |                    |\n",
+            "|            |                    | Woodside Ferry                        |              |               |                    |\n",
+            "|            |                    |                                       |            4 |               |                    |\n",
+            "|            |                    |                                       |              | 7476D9        |                    |\n",
+            "|            |                    |                                       |              |               |                  0 |\n"
+          ]
+        }
+      ],
+      "source": [
+        "import json\n",
+        "from tabulate import tabulate\n",
+        "# feel free to add more, if you need to\n",
+        "with open('/content/sample_data/hfxbus.json') as f:\n",
+        "  data = f.read()\n",
+        "\n",
+        "json_dict = json.loads(data)\n",
+        "\n",
+        "print(\"The JSON document is loaded as type {0}\\n\".format(type(json_dict)))\n",
+        "\n",
+        "\n",
+        "header = [\"route_id\", \"route_short_name\", \"route_long_name\"] \n",
+        "new=[\"route_desc\", \"route_url\",\"agency_id\"]\n",
+        "rev_dic=None\n",
+        "a=[]\n",
+        "\n",
+        "for new_dict in json_dict:\n",
+        "  for key,value in new_dict.items(): \n",
+        "    if key not in new:\n",
+        "        rev_dict ={key:value}\n",
+        "        a.append(rev_dict)\n",
+        "print(a)\n",
+        "v= dict(zip(header,header))\n",
+        "\n",
+        "print(tabulate(a,v,tablefmt=\"github\"))\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "9t1k82B8GAF4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e82YxEyJCd90"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "You have been provided with a dataset (```hfxbus.json```) collected from the Halifax Municipal open data website https://www.halifax.ca/home/open-data\n",
+        "\n",
+        "You are to load this dataset and print it in a  nice table format as presented below ( **Use the tabulate library only. You will have to research on how to use it on your own. Reference is documentation and Google!** ):. \n",
+        "\n",
+        "- ``` Hint: \n",
+        "This is a json file so you need to open and convert the json into a dictionary before you can use it!\n",
+        "Also to get fancy column line you can use this extra keyword argument: tablefmt=\"github\"\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "_WVYUYnCCd91"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "scrolled": true,
+        "id": "6HQ49he5Cd91",
+        "outputId": "d225af13-cc52-4619-db80-7a295059df94"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "| route_id   | agency_id   | route_short_name   | route_long_name                       |\n",
+            "|------------|-------------|--------------------|---------------------------------------|\n",
+            "| 1          | Halifax     | 1                  | Spring Garden                         |\n",
+            "| 10         | Halifax     | 10                 | Dalhousie                             |\n",
+            "| 136        | Halifax     | 136                | Farnham Gate                          |\n",
+            "| 14         | Halifax     | 14                 | Leiblin Park                          |\n",
+            "| 185        | Halifax     | 185                | Millwood Express                      |\n",
+            "| 2          | Halifax     | 2                  | Fairview                              |\n",
+            "| 21         | Halifax     | 21                 | Lakeside - Timberlea                  |\n",
+            "| 22         | Halifax     | 22                 | Armdale                               |\n",
+            "| 25         | Halifax     | 25                 | Governors Brook                       |\n",
+            "| 28         | Halifax     | 28                 | Bayers Lake                           |\n",
+            "| 29         | Halifax     | 29                 | Barrington                            |\n",
+            "| 3          | Halifax     | 3                  | CrossTown                             |\n",
+            "| 30A        | Halifax     | 30A                | Parkland                              |\n",
+            "| 30B        | Halifax     | 30B                | Dunbrack                              |\n",
+            "| 320        | Halifax     | 320                | Airport - Fall River MetroX           |\n",
+            "| 330        | Halifax     | 330                | Tantallon - Sheldrake Lake MetroX     |\n",
+            "| 370        | Halifax     | 370                | Porters Lake MetroX                   |\n",
+            "| 39         | Halifax     | 39                 | Flamingo                              |\n",
+            "| 4          | Halifax     | 4                  | Universities                          |\n",
+            "| 401        | Halifax     | 401                | Preston - Porters Lake - Grand Desert |\n",
+            "| 415        | Halifax     | 415                | Purcells Cove                         |\n",
+            "| 433        | Halifax     | 433                | Tantallon                             |\n",
+            "| 51         | Halifax     | 51                 | Windmill                              |\n",
+            "| 53         | Halifax     | 53                 | Notting Park                          |\n",
+            "| 54         | Halifax     | 54                 | Montebello                            |\n",
+            "| 55         | Halifax     | 55                 | Port Wallace                          |\n",
+            "| 56         | Halifax     | 56                 | Dartmouth Crossing                    |\n",
+            "| 57         | Halifax     | 57                 | Russell Lake                          |\n",
+            "| 58         | Halifax     | 58                 | Woodlawn                              |\n",
+            "| 59         | Halifax     | 59                 | Colby                                 |\n",
+            "| 60         | Halifax     | 60                 | Eastern Passage - Heritage Hills      |\n",
+            "| 61         | Halifax     | 61                 | Auburn - North Preston                |\n",
+            "| 62         | Halifax     | 62                 | Wildwood                              |\n",
+            "| 63         | Halifax     | 63                 | Woodside                              |\n",
+            "| 64         | Halifax     | 64                 | Burnside                              |\n",
+            "| 65         | Halifax     | 65                 | Caldwell                              |\n",
+            "| 66         | Halifax     | 66                 | Penhorn                               |\n",
+            "| 68         | Halifax     | 68                 | Cherry Brook                          |\n",
+            "| 7          | Halifax     | 7                  | Robie                                 |\n",
+            "| 72         | Halifax     | 72                 | Portland Hills                        |\n",
+            "| 8          | Halifax     | 8                  | Sackville Corridor                    |\n",
+            "| 82         | Halifax     | 82                 | First Lake                            |\n",
+            "| 83         | Halifax     | 83                 | Springfield                           |\n",
+            "| 84         | Halifax     | 84                 | Glendale                              |\n",
+            "| 85         | Halifax     | 85                 | Millwood                              |\n",
+            "| 86         | Halifax     | 86                 | Beaver Bank                           |\n",
+            "| 87         | Halifax     | 87                 | Sackville - Dartmouth                 |\n",
+            "| 88         | Halifax     | 88                 | Bedford Commons                       |\n",
+            "| 90         | Halifax     | 90                 | Larry Uteck                           |\n",
+            "| 91         | Halifax     | 91                 | Hemlock Ravine                        |\n",
+            "| 9A         | Halifax     | 9A                 | Greystone                             |\n",
+            "| 9B         | Halifax     | 9B                 | Herring Cove                          |\n",
+            "| FerD       | Halifax     | FerD               | Alderney Ferry                        |\n",
+            "| FerW       | Halifax     | FerW               | Woodside Ferry                        |\n"
+          ]
+        }
+      ],
+      "source": [
+        "# DO NOT RUN THIS CELL.. YOU WILL LOOSE THE OUTPUT!!!\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "BeyO-vZWCd93"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "B5wIAoMBCd93",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ef9a2d44-0516-45b1-d2ec-d5dc21bd9466"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The JSON document is loaded as type <class 'list'>\n",
+            "\n",
+            "|------|---------|------|---------------------------------------|--|---|--|--------|---|\n",
+            "| 1    | Halifax | 1    | Spring Garden                         |  | 3 |  | 7476D9 | 0 |\n",
+            "| 10   | Halifax | 10   | Dalhousie                             |  | 3 |  | 7476D9 | 0 |\n",
+            "| 136  | Halifax | 136  | Farnham Gate                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 14   | Halifax | 14   | Leiblin Park                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 185  | Halifax | 185  | Millwood Express                      |  | 3 |  | 7476D9 | 0 |\n",
+            "| 2    | Halifax | 2    | Fairview                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 21   | Halifax | 21   | Lakeside - Timberlea                  |  | 3 |  | 7476D9 | 0 |\n",
+            "| 22   | Halifax | 22   | Armdale                               |  | 3 |  | 7476D9 | 0 |\n",
+            "| 25   | Halifax | 25   | Governors Brook                       |  | 3 |  | 7476D9 | 0 |\n",
+            "| 28   | Halifax | 28   | Bayers Lake                           |  | 3 |  | 7476D9 | 0 |\n",
+            "| 29   | Halifax | 29   | Barrington                            |  | 3 |  | 7476D9 | 0 |\n",
+            "| 3    | Halifax | 3    | CrossTown                             |  | 3 |  | 7476D9 | 0 |\n",
+            "| 30A  | Halifax | 30A  | Parkland                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 30B  | Halifax | 30B  | Dunbrack                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 320  | Halifax | 320  | Airport - Fall River MetroX           |  | 3 |  | 7476D9 | 0 |\n",
+            "| 330  | Halifax | 330  | Tantallon - Sheldrake Lake MetroX     |  | 3 |  | 7476D9 | 0 |\n",
+            "| 370  | Halifax | 370  | Porters Lake MetroX                   |  | 3 |  | 7476D9 | 0 |\n",
+            "| 39   | Halifax | 39   | Flamingo                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 4    | Halifax | 4    | Universities                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 401  | Halifax | 401  | Preston - Porters Lake - Grand Desert |  | 3 |  | 7476D9 | 0 |\n",
+            "| 415  | Halifax | 415  | Purcells Cove                         |  | 3 |  | 7476D9 | 0 |\n",
+            "| 433  | Halifax | 433  | Tantallon                             |  | 3 |  | 7476D9 | 0 |\n",
+            "| 51   | Halifax | 51   | Windmill                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 53   | Halifax | 53   | Notting Park                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 54   | Halifax | 54   | Montebello                            |  | 3 |  | 7476D9 | 0 |\n",
+            "| 55   | Halifax | 55   | Port Wallace                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 56   | Halifax | 56   | Dartmouth Crossing                    |  | 3 |  | 7476D9 | 0 |\n",
+            "| 57   | Halifax | 57   | Russell Lake                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 58   | Halifax | 58   | Woodlawn                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 59   | Halifax | 59   | Colby                                 |  | 3 |  | 7476D9 | 0 |\n",
+            "| 60   | Halifax | 60   | Eastern Passage - Heritage Hills      |  | 3 |  | 7476D9 | 0 |\n",
+            "| 61   | Halifax | 61   | Auburn - North Preston                |  | 3 |  | 7476D9 | 0 |\n",
+            "| 62   | Halifax | 62   | Wildwood                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 63   | Halifax | 63   | Woodside                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 64   | Halifax | 64   | Burnside                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 65   | Halifax | 65   | Caldwell                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 66   | Halifax | 66   | Penhorn                               |  | 3 |  | 7476D9 | 0 |\n",
+            "| 68   | Halifax | 68   | Cherry Brook                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| 7    | Halifax | 7    | Robie                                 |  | 3 |  | 7476D9 | 0 |\n",
+            "| 72   | Halifax | 72   | Portland Hills                        |  | 3 |  | 7476D9 | 0 |\n",
+            "| 8    | Halifax | 8    | Sackville Corridor                    |  | 3 |  | 7476D9 | 0 |\n",
+            "| 82   | Halifax | 82   | First Lake                            |  | 3 |  | 7476D9 | 0 |\n",
+            "| 83   | Halifax | 83   | Springfield                           |  | 3 |  | 7476D9 | 0 |\n",
+            "| 84   | Halifax | 84   | Glendale                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 85   | Halifax | 85   | Millwood                              |  | 3 |  | 7476D9 | 0 |\n",
+            "| 86   | Halifax | 86   | Beaver Bank                           |  | 3 |  | 7476D9 | 0 |\n",
+            "| 87   | Halifax | 87   | Sackville - Dartmouth                 |  | 3 |  | 7476D9 | 0 |\n",
+            "| 88   | Halifax | 88   | Bedford Commons                       |  | 3 |  | 7476D9 | 0 |\n",
+            "| 90   | Halifax | 90   | Larry Uteck                           |  | 3 |  | 7476D9 | 0 |\n",
+            "| 91   | Halifax | 91   | Hemlock Ravine                        |  | 3 |  | 7476D9 | 0 |\n",
+            "| 9A   | Halifax | 9A   | Greystone                             |  | 3 |  | 7476D9 | 0 |\n",
+            "| 9B   | Halifax | 9B   | Herring Cove                          |  | 3 |  | 7476D9 | 0 |\n",
+            "| FerD | Halifax | FerD | Alderney Ferry                        |  | 4 |  | 7476D9 | 0 |\n",
+            "| FerW | Halifax | FerW | Woodside Ferry                        |  | 4 |  | 7476D9 | 0 |\n"
+          ]
+        }
+      ],
+      "source": [
+        "import json\n",
+        "from tabulate import tabulate\n",
+        "# feel free to add more, if you need to\n",
+        "with open('hfxbus.json') as f:\n",
+        "  data = f.read()\n",
+        "\n",
+        "json_dict = json.loads(data)\n",
+        "\n",
+        "print(\"The JSON document is loaded as type {0}\\n\".format(type(json_dict)))\n",
+        "\n",
+        "print(tabulate(json_dict, tablefmt=\"github\"))\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P49zZT3ECd94"
+      },
+      "source": [
+        "# Question 3\n",
+        "In your github repository, there is a folder called ```question 3```. You are to answer this question inside that folder.\n",
+        "\n",
+        "\n",
+        "## Question 3A\n",
+        "Write a Dockerfile that:\n",
+        "- Starts from a base image of Ubuntu Linux.\n",
+        "- Create a new user called ```inwk```, and a new group called ```student```. Add the user to the new group.\n",
+        "- Copy the file named: ```welcome.py``` that is provided to you in the question3 folder. Make this file executable. \n",
+        "- Make this file (```welcome.py```) run as a script by default whenever a container is created from the image built by your Dockerfile. i.e when i use the command: ```docker run ... ``` **You may need to edit the contents inside this file to make this task work**\n",
+        "\n",
+        "- Test your Dockerfile\n",
+        "\n",
+        "## Question 3B\n",
+        "Write a Docker Compose file that:\n",
+        "- Has two services and a network. \n",
+        "- Each service runs an image from the Dockerfile written in Question 1\n",
+        "- Link the two service together by placing them in the same network  \n",
+        "- Test your Compose file\n",
+        "\n",
+        "# Checks\n",
+        "- When you are done, your finished repository should have two new files in ```question3```folder: ```Dockerfile``` and ```docker-compose.yml```\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "T54oamK5Cd96"
+      },
+      "source": [
+        "**DONT FORGET TO PUSH YOUR FINAL CODE** "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "bAArycb-Cd98"
+      },
+      "outputs": [],
+      "source": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8.3"
+    },
+    "toc": {
+      "base_numbering": 1,
+      "nav_menu": {},
+      "number_sections": false,
+      "sideBar": true,
+      "skip_h1_title": false,
+      "title_cell": "Table of Contents",
+      "title_sidebar": "Contents",
+      "toc_cell": false,
+      "toc_position": {},
+      "toc_section_display": true,
+      "toc_window_display": false
+    },
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
